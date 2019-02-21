@@ -7,13 +7,15 @@ import menu from "./modules/menu";
 import shows from "./modules/shows";
 import seasons from "./modules/seasons";
 import episodes from "./modules/episodes";
+import auth from "./modules/auth";
 
 export const store = new Vuex.Store({
   modules: {
     menu,
     shows,
     seasons,
-    episodes
+    episodes,
+    auth
   },
   strict: process.env.NODE_ENV !== "production"
 });
